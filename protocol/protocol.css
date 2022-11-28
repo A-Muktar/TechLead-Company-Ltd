@@ -1,28 +1,5 @@
-/*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
-*/
-*,
 
-.slides, .slides * { box-sizing: border-box; }
-.slides, .slide {
-  width: 100%;
-  max-width: 600px; /* optional */
-  height: 400px;
-}
 
-/* (B) SLIDES LAYERING */
-.slides { position: relative; }
-.slide {
-  position: absolute;
-  top: 0; left: 0;
-}
-
-/* (C) SLIDE IMAGES */
-.slide {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 :after,
 :before {
