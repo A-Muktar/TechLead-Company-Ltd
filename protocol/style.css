@@ -1,7 +1,24 @@
-/*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
-*/
-*,
+/* custom css */
+
+.carousel-inner,
+img {
+  max-height: 500px;
+}
+
+a .flex img:hover {
+  opacity: 0.5;
+}
+
+nav {
+  background: linear-gradient(132deg, rgb(65, 80, 95) 0%, rgb(36, 37, 38) 100%);
+}
+
+footer {
+  background: linear-gradient(132deg, rgb(65, 80, 95) 0%, rgb(36, 37, 38) 100%);
+}
+
+/* end */
+
 :after,
 :before {
   box-sizing: border-box;
@@ -102,6 +119,7 @@ select {
 [type="submit"],
 button {
   -webkit-appearance: button;
+  appearance: button;
   background-color: transparent;
   background-image: none;
 }
@@ -120,13 +138,16 @@ progress {
 }
 [type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 ::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  appearance: button;
   font: inherit;
 }
 summary {
@@ -286,7 +307,7 @@ select {
   background-size: 1.5em 1.5em;
   padding-right: 2.5rem;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  /* color-adjust: exact; */
   print-color-adjust: exact;
 }
 [multiple] {
@@ -296,7 +317,7 @@ select {
   background-size: initial;
   padding-right: 0.75rem;
   -webkit-print-color-adjust: unset;
-  color-adjust: unset;
+  /* color-adjust: unset; */
   print-color-adjust: unset;
 }
 [type="checkbox"],
@@ -306,7 +327,7 @@ select {
   appearance: none;
   padding: 0;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  /* color-adjust: exact; */
   print-color-adjust: exact;
   display: inline-block;
   vertical-align: middle;

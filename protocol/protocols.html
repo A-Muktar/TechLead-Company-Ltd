@@ -25,20 +25,7 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
 
 
     <link rel="icon" href="../company_logo.jpeg" />
-    <!-- {% comment %} <script type="application/ld+json">
-      {
-                  &quot;@context&quot;: &quot;https://schema.org&quot;,
-                  &quot;@type&quot;: &quot;BreadcrumbList&quot;,
-                  &quot;itemListElement&quot;: [
-                    {
-                      &quot;@type&quot;: &quot;ListItem&quot;,
-                      &quot;position&quot;: 0,
-                      &quot;name&quot;: &quot;Protocols&quot;,
-                      &quot;item&quot;: &quot;https://www.htmlite.com/protocols&quot;
-                    }
-                  ]
-                }
-    </script> {% endcomment %} -->
+    
     <meta name="next-head-count" content="9" />
     <link
       rel="preload"
@@ -52,60 +39,66 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
     />
   </head>
   <body>
-    <div id="__next">
-      <div class="bg-white max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <header class="bg-white">
-              <nav class="navbar navbar-dark bg-dark fixed-top">
-                <div class="container-fluid">
-                  <div class="flex justify-start lg:w-0 lg:flex-1">
-                    <a href="/"><span class="link-primary relative">TechLead</span><img class="h-8 w-auto sm:h-10"
-                        src="./company_logo.jpeg" width="150" height="40" alt="TechLead" border-radius="20" /></a>
-                  </div>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                      <h5 class="offcanvas-title text-primary h2" id="offcanvasDarkNavbarLabel">TechLead Co. Ltd</h5>
-                      <button type="button" class="btn-close btn-close-red bg-danger" data-bs-dismiss="offcanvas"
-                        aria-label="Close"><i class="bi bi-backspace-reverse-fill"></i></button>
-                    </div>
-                    <div class="offcanvas-body">
-                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item h4  ">
-                          <a class="nav-link link-success \" aria-current="page" href="#"><i
-                              class="bi bi-house-check-fill "></i> Home</a>
-                        </li>
-                        <li class="nav-item h4">
-                          <a class="nav-link " href="#"><i class="bi bi-file-earmark-person-fill "></i> About</a>
-                        </li>
-                        <li class="nav-item dropdown h4">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false"><i class="bi bi-book"></i>
-                            Courses
-                          </a>
-                          <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                              <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                      <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Search</button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        </header>
-        
+     <!-- <header> -->
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <div class="flex justify-start lg:w-0 lg:flex-1">
+            <a href="/"><img class="h-8 w-auto sm:h-10"
+                src="../company_logo.jpeg" width="150" height="40" alt="TechLead"/></a><span class="link-primary h3">TechLead</span>
+          </div> 
+
+          <button class="navbar-toggler text-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-primary h2" id="offcanvasDarkNavbarLabel">TechLead Co. Ltd</h5>
+              <button type="button" class="btn-close btn-close-red bg-danger" data-bs-dismiss="offcanvas"
+                aria-label="Close"><i class="bi bi-backspace-reverse-fill"></i></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item h4  ">
+                  <a class="nav-link link-success" aria-current="page" href="#"><i
+                      class="bi bi-house-check-fill "></i> Home</a>
+                </li>
+                <li class="nav-item h4">
+                  <a class="nav-link " href="#"><i class="bi bi-file-earmark-person-fill "></i> About</a>
+                </li>
+                <li class="nav-item dropdown h4">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="bi bi-book"></i>
+                    Courses
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item text-info" title="HyperText Markup language" href="#">HTML</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">CSS</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Python</a></li><hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">JavaScript</a></li><hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">Django</a></li><hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">Computer Networking</a></li><hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">Linux Commands</a></li><hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href="#">Windows commands</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- main -->
         <main>
           <nav
             class="flex max-w-7xl mx-auto px-6 sm:px-6 lg:px-8"
@@ -469,31 +462,26 @@ integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG
             </div>
           </div>
         </main>
+
+        <!-- footer section -->
         <footer class="bg-white">
-          <div
-            class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8"
-          >
-            <nav
-              class="-mx-5 -my-2 flex flex-wrap justify-center"
-              aria-label="Footer"
-            >
+          <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
               <div class="px-5 py-2">
-                <a
-                  href="/about"
-                  class="text-base text-gray-500 hover:text-gray-900"
-                  >About</a
-                >
+                <a href="/about" class="text-base text-gray-500 hover:text-gray-900">About</a>
               </div>
             </nav>
             <p class="mt-8 text-center text-base text-gray-500">
               ©
-              <!-- -->2022<!-- -->
-              TechLead Co. Ltd. All rights reserved.<!-- -->
+              <!-- -->2022
+              <!-- -->
+              TechLead Co. Ltd. All rights reserved.
+              <!-- -->
             </p>
           </div>
         </footer>
-      </div>
-    </div>
+  
+    
      <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
