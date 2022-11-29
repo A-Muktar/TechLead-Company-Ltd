@@ -13,9 +13,11 @@
   <link href="https://www.TeadLead.com/" rel="canonical" />
   <meta property="og:image"
     content="https://res.cloudinary.com/slp-careers/image/upload/f_auto,q_auto,w_1200,h_630/v1667254084/TeadLead-large" />
-  <!-- CSS only -->
+  <!-- Bootstrap CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Fontawesome cdn  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
   <link rel="icon" href="/favicon.png" />
   <meta name="next-head-count" content="9" />
@@ -23,10 +25,11 @@
   <link rel="stylesheet" href="protocol/style.css" data-n-g="" />
 
   <style>
-.carousel-inner, img {
-  max-height: 500px;
-  
-}
+    .carousel-inner,
+    img {
+      max-height: 500px;
+
+    }
 
 
     a .flex img:hover {
@@ -39,204 +42,247 @@
   <div id="__next">
     <div class="bg-white">
       <header class="bg-white">
-        <div class="relative bg-white">
-          <div
-            class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+          <div class="container-fluid">
             <div class="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/"><span class="sr-only">Workflow</span><img class="h-8 w-auto sm:h-10"
-                  src="./assets/imgs/techLead.png" width="150" height="40" alt="TechLead" /></a>
+              <a href="/"><span class="link-primary relative">TechLead</span><img class="h-8 w-auto sm:h-10"
+                  src="./company_logo.jpeg" width="150" height="40" alt="TechLead" border-radius="20" /></a>
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+              aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-primary h2" id="offcanvasDarkNavbarLabel">TechLead Co. Ltd</h5>
+                <button type="button" class="btn-close btn-close-red bg-danger" data-bs-dismiss="offcanvas"
+                  aria-label="Close"><i class="bi bi-backspace-reverse-fill"></i></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item h4  ">
+                    <a class="nav-link link-success \" aria-current="page" href="#"><i
+                        class="bi bi-house-check-fill "></i> Home</a>
+                  </li>
+                  <li class="nav-item h4">
+                    <a class="nav-link " href="#"><i class="bi bi-file-earmark-person-fill "></i> About</a>
+                  </li>
+                  <li class="nav-item dropdown h4">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false"><i class="bi bi-book"></i>
+                      Courses
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </div>
+  </div>
+  </header>
+  
+  <!-- Carousel section -->
+  <main>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+
+          <div class="container-md">
+            <img src="company_logo.jpeg" class="d-block w-100 " alt="TechLead">
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h1 class="text-center text-5xl font-extrabold">
+              <span class="text-white">Tech</span><span class="text-blue-200">Lead</span>
+            </h1>
+            <p class="text-gray-400 h5"> Helping you get to the next step of your coding journey
+              since 2021.</p>
           </div>
         </div>
-      </header>
-      <main>
-
-        <div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-
-              <div class="container-md">
-                <img src="company_logo.jpeg" class="d-block w-100 " alt="TechLead">
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h1 class="text-center text-5xl font-extrabold">
-                  <span class="text-white">Tech</span><span class="text-blue-200">Lead</span>
-                </h1>
-                <p class="text-gray-400 h5"> Helping you get to the next step of your coding journey
-                  since 2021.</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="..." class="d-block w-100" alt="TechLead">
-              <div class="carousel-caption d-none d-md-block">
-                <h1>
-                  <span class="text-white">Tech</span><span class="text-blue-200">Lead</span>
-                </h1>                <p>Helping you get to the next step of your coding journey
-                  since 2021</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="TechLead">
-              <div class="carousel-caption d-none d-md-block">
-                <h1>
-                  <span class="text-white">Tech</span><span class="text-blue-200">Lead</span>
-                </h1>                <p>Helping you get to the next step of your coding journey
-                  since 2021</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-
-        <div class="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-          <div class="relative max-w-7xl mx-auto">
-            <div class="text-center">
-              <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
-                Start Learning
-              </h2>
-              <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
-                Whether you&#x27;re coding for the first time or a veteran
-                wanting to brush up on data structure interview questions,
-                <strong>TeadLead</strong> is here to help
-              </p>
-            </div>
-            <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
-              <a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/protocols">
-                <div class="flex-shrink-0">
-                  <img class="h-20 w-full object-cover" src="./assets/imgs/protocols.png" width="413" height="192"
-                    alt="Protocols" />
-                </div>
-                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                  <div class="flex-1">
-                    <div class="block mt-2">
-                      <p class="text-xl font-bold text-black-1500">
-                        Protocols
-                      </p>
-                      <p class="mt-3 text-base text-gray-500 line-clamp-2">
-                        Learn all about the many protocols used to communicate
-                        between different devices.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-6 flex items-center">
-                    <div class="flex space-x-1 text-sm text-gray-500">
-                      <p>Last Updated</p>
-                      <time datetime="2022-08-11T20:30:58+00:00"></time>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages">
-                <div class="flex-shrink-0">
-                  <img class="h-48 w-full object-cover" src=" ./assets/imgs/programming-languages.png" width="413"
-                    height="192" alt="Programming Languages" />
-                </div>
-                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                  <div class="flex-1">
-                    <div class="block mt-2">
-                      <p class="text-xl font-bold text-black-900">
-                        Programming Languages
-                      </p>
-                      <p class="mt-3 text-base text-gray-500 line-clamp-2">
-                        Answer questions about HTML, CSS, JavaScript or other
-                        programming languages.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-6 flex items-center">
-                    <div class="flex space-x-1 text-sm text-gray-500">
-                      <p>Last Updated</p>
-                      <time datetime="2022-10-19T19:55:03.084723+00:00"></time>
-                    </div>
-                  </div>
-                </div>
-              </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/databases">
-                <div class="flex-shrink-0">
-                  <img class="h-48 w-full object-cover" src="./assets/imgs/databases.png" width="413" height="192"
-                    alt="Databases" />
-                </div>
-                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                  <div class="flex-1">
-                    <div class="block mt-2">
-                      <p class="text-xl font-bold text-black-900">
-                        Databases
-                      </p>
-                      <p class="mt-3 text-base text-gray-500 line-clamp-2">
-                        Learn about the nuances of different types of
-                        databases
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-6 flex items-center">
-                    <div class="flex space-x-1 text-sm text-gray-500">
-                      <p>Last Updated</p>
-                      <time datetime="2022-10-19T20:11:01.535891+00:00"></time>
-                    </div>
-                  </div>
-                </div>
-              </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/configuration">
-                <div class="flex-shrink-0">
-                  <img class="h-48 w-full object-cover" src="./assets/imgs/configuration.png" width="413" height="192"
-                    alt="Configuration" />
-                </div>
-                <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                  <div class="flex-1">
-                    <div class="block mt-2">
-                      <p class="text-xl font-bold text-black-900">
-                        Configuration
-                      </p>
-                      <p class="mt-3 text-base text-gray-500 line-clamp-2">
-                        Learn about the many ways software and servers can be
-                        configured.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="mt-6 flex items-center">
-                    <div class="flex space-x-1 text-sm text-gray-500">
-                      <p>Last Updated</p>
-                      <time datetime="2022-10-22T22:24:59.611634+00:00"></time>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="..." class="d-block w-100" alt="TechLead">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>
+              <span class="text-white">Tech</span><span class="text-blue-200">Lead</span>
+            </h1>
+            <p>Helping you get to the next step of your coding journey
+              since 2021</p>
           </div>
         </div>
-      </main>
-      <footer class="bg-white">
-        <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-          <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-            <div class="px-5 py-2">
-              <a href="/about" class="text-base text-gray-500 hover:text-gray-900">About</a>
-            </div>
-          </nav>
-          <p class="mt-8 text-center text-base text-gray-500">
-            ©
-            <!-- -->2022
-            <!-- -->
-            TechLead Co. Ltd. All rights reserved.
-            <!-- -->
+        <div class="carousel-item">
+          <img src="..." class="d-block w-100" alt="TechLead">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>
+              <span class="text-white">Tech</span><span class="text-blue-200">Lead</span>
+            </h1>
+            <p>Helping you get to the next step of your coding journey
+              since 2021</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div class="relative max-w-7xl mx-auto">
+        <div class="text-center">
+          <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">
+            Start Learning
+          </h2>
+          <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">
+            Whether you&#x27;re coding for the first time or a veteran
+            wanting to brush up on data structure interview questions,
+            <strong>TeadLead</strong> is here to help
           </p>
         </div>
-      </footer>
+
+        <!-- Courses section -->
+        <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+          <a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="./protocol/protocols.html">
+            <div class="flex-shrink-0">
+              <img class="h-20 w-full object-cover" src="./assets/imgs/protocols.png" width="413" height="192"
+                alt="Protocols" />
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <div class="block mt-2">
+                  <p class="text-xl font-bold text-black-1500">
+                    Protocols
+                  </p>
+                  <p class="mt-3 text-base text-gray-500 line-clamp-2">
+                    Learn all about the many protocols used to communicate
+                    between different devices.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <p>Last Updated</p>
+                  <time datetime="2022-08-11T20:30:58+00:00"></time>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages">
+            <div class="flex-shrink-0">
+              <img class="h-48 w-full object-cover" src=" ./assets/imgs/programming-languages.png" width="413"
+                height="192" alt="Programming Languages" />
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <div class="block mt-2">
+                  <p class="text-xl font-bold text-black-900">
+                    Programming Languages
+                  </p>
+                  <p class="mt-3 text-base text-gray-500 line-clamp-2">
+                    Answer questions about HTML, CSS, JavaScript or other
+                    programming languages.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <p>Last Updated</p>
+                  <time datetime="2022-10-19T19:55:03.084723+00:00"></time>
+                </div>
+              </div>
+            </div>
+          </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/databases">
+            <div class="flex-shrink-0">
+              <img class="h-48 w-full object-cover" src="./assets/imgs/databases.png" width="413" height="192"
+                alt="Databases" />
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <div class="block mt-2">
+                  <p class="text-xl font-bold text-black-900">
+                    Databases
+                  </p>
+                  <p class="mt-3 text-base text-gray-500 line-clamp-2">
+                    Learn about the nuances of different types of
+                    databases
+                  </p>
+                </div>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <p>Last Updated</p>
+                  <time datetime="2022-10-19T20:11:01.535891+00:00"></time>
+                </div>
+              </div>
+            </div>
+          </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/configuration">
+            <div class="flex-shrink-0">
+              <img class="h-48 w-full object-cover" src="./assets/imgs/configuration.png" width="413" height="192"
+                alt="Configuration" />
+            </div>
+            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+              <div class="flex-1">
+                <div class="block mt-2">
+                  <p class="text-xl font-bold text-black-900">
+                    Configuration
+                  </p>
+                  <p class="mt-3 text-base text-gray-500 line-clamp-2">
+                    Learn about the many ways software and servers can be
+                    configured.
+                  </p>
+                </div>
+              </div>
+              <div class="mt-6 flex items-center">
+                <div class="flex space-x-1 text-sm text-gray-500">
+                  <p>Last Updated</p>
+                  <time datetime="2022-10-22T22:24:59.611634+00:00"></time>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
+  </main>
+  <footer class="bg-white">
+    <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+      <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+        <div class="px-5 py-2">
+          <a href="/about" class="text-base text-gray-500 hover:text-gray-900">About</a>
+        </div>
+      </nav>
+      <p class="mt-8 text-center text-base text-gray-500">
+        ©
+        <!-- -->2022
+        <!-- -->
+        TechLead Co. Ltd. All rights reserved.
+        <!-- -->
+      </p>
+    </div>
+  </footer>
+  </div>
   </div>
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

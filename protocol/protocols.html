@@ -17,8 +17,15 @@
       property="og:image"
       content="protocols.png"
     />
-    <link rel="icon" href="/favicon.png" />
-    <script type="application/ld+json">
+<!-- Bootstrap CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- Bootstrap icon cdn  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+
+    <link rel="icon" href="../company_logo.jpeg" />
+    <!-- {% comment %} <script type="application/ld+json">
       {
                   &quot;@context&quot;: &quot;https://schema.org&quot;,
                   &quot;@type&quot;: &quot;BreadcrumbList&quot;,
@@ -31,7 +38,7 @@
                     }
                   ]
                 }
-    </script>
+    </script> {% endcomment %} -->
     <meta name="next-head-count" content="9" />
     <link
       rel="preload"
@@ -47,25 +54,58 @@
   <body>
     <div id="__next">
       <div class="bg-white max-w-7xl mx-auto sm:px-6 lg:px-8">
-        <header class="bg-white">
-          <div class="relative bg-white">
-            <div
-              class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
-            >
-              <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a href="/"
-                  ><span class="sr-only">Workflow</span
-                  ><img
-                    class="h-8 w-auto sm:h-10"
-                    src="protocols.png"
-                    width="150"
-                    height="40"
-                    alt="TechLead"
-                /></a>
-              </div>
-            </div>
-          </div>
+            <header class="bg-white">
+              <nav class="navbar navbar-dark bg-dark fixed-top">
+                <div class="container-fluid">
+                  <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="/"><span class="link-primary relative">TechLead</span><img class="h-8 w-auto sm:h-10"
+                        src="./company_logo.jpeg" width="150" height="40" alt="TechLead" border-radius="20" /></a>
+                  </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title text-primary h2" id="offcanvasDarkNavbarLabel">TechLead Co. Ltd</h5>
+                      <button type="button" class="btn-close btn-close-red bg-danger" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="bi bi-backspace-reverse-fill"></i></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item h4  ">
+                          <a class="nav-link link-success \" aria-current="page" href="#"><i
+                              class="bi bi-house-check-fill "></i> Home</a>
+                        </li>
+                        <li class="nav-item h4">
+                          <a class="nav-link " href="#"><i class="bi bi-file-earmark-person-fill "></i> About</a>
+                        </li>
+                        <li class="nav-item dropdown h4">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"><i class="bi bi-book"></i>
+                            Courses
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
+        
         <main>
           <nav
             class="flex max-w-7xl mx-auto px-6 sm:px-6 lg:px-8"
@@ -386,7 +426,7 @@
                 ></p>
               </div>
               <div
-                class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
+                class="mt-lg-5 max-w-2xl mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
               >
                 <a
                   class="flex flex-col rounded-lg shadow-lg overflow-hidden"
@@ -395,7 +435,7 @@
                     <img
                       class="h-48 w-full object-cover"
                       src="protocols.png"
-                      width="413"
+                      width="400"
                       height="192"
                       alt="File Transfer Protocol"
                     />
@@ -454,60 +494,10 @@
         </footer>
       </div>
     </div>
-    <script id="__NEXT_DATA__" type="application/json">
-      {
-        "props": {
-          "pageProps": {
-            "concept": {
-              "uuid": "f73aae9b-4d49-45f4-9d22-9f60d29c9f3b",
-              "title": "Protocols",
-              "slug": "protocols",
-              "content": "## Introduction to protocols\n\nProtocols are the rules that specify how messages should be formatted and how responses should be generated.\n\nProtocols are important in programming because they allow devices to communicate with each other.\n\nIn order for two devices to communicate, they need to be using the same protocol, the same way that two humans can't understand each other unless they communicate with a shared language.\n\nThere are many different protocols that can be used, and each has its own advantages and disadvantages, and each has been heavily influenced by the technology available at the time it was started.\n\nSome common protocols used in programming include TCP/IP, HTTP / HTTPS, and SMTP.  Lets learn a bit about the purpose and inner-workings of each of these more-common protocols.\n\n## The TCP/IP protocol stack\n\nThe TCP/IP protocol stack is a set of protocols that are used to communicate over the internet.\n\nThe stack consists of four layers: the physical layer, the data link layer, the network layer, and the transport layer.\n\nEach layer has its own set of protocols that are responsible for different tasks.\n\nThe physical layer handles communication between devices, the data link layer handles communication between nodes, the network layer handles routing of packets, and the transport layer handles end-to-end communication.\n\n## HTTP and HTTPS protocols\n\nHistorically, HTTP is the protocol used to fetch web pages, while HTTPS is used for secure communications, such as online banking or shopping.\n\nBut most modern websites use HTTPS to serve traffic on all web pages to ensure all websites are as secure as possible.\n\nBoth HTTP and HTTPS use the same underlying technology, but HTTPS adds an extra layer of security by encrypting data before it is transmitted.\n\nWhen you visit a website, your browser will automatically use whichever protocol is supported by the site (usually HTTPS).\n\nHowever, you can force your browser to use HTTP if you're visiting an older website. Some websites offer both HTTP and HTTPS versions, while others only offer one or the other.\n\n## SMTP protocol\n\nSMTP is a text-based protocol that uses plain text to send messages (such as email), and is what's called a push protocol, which means that it sends messages from one server to another.\n\nSMTP is also referred to as a store-and-forward protocol, which means that it stores messages on the sending server until they can be delivered to the receiving server.\n\nAnd SMTP is a \"reliable protocol,\" which means that delivery of messages is guaranteed.\n\n## FTP protocol\n\nFTP is a standard protocol for transferring files between computers on the Internet, and it's a \"client-server protocol\", which means that an FTP client program (running on your computer) is used to connect to an FTP server program (running on the remote computer.)\n\nOnce connected, you can upload or download files from the server using the FTP client.\n\nTo connect to an FTP server, you need the server's hostname or IP address, as well as a username and password (if the server requires authentication.)\n\nThere are many different FTP clients available; some are free, while others must be purchased.\n\n## Other protocols\n\nAs we discussed, protocols are different sets of rules and standards that govern how computer code works, and there's a near-infinite number of them.\n\nSome were created decades ago, while many others were created just within the last year or two (many of the crypto currencies started in the early 2020's created their own protocols.)\n\nProtocols are constantly evolving, so it is important to stay up-to-date on the latest changes.",
-              "description": "Learn all about the many protocols used to communicate between different devices.",
-              "img_src": "https://res.cloudinary.com/slp-careers/image/upload/v1664932828/protocols.png",
-              "is_legacy_post": false,
-              "created_at": "2022-08-11T20:30:58+00:00",
-              "updated_at": "2022-08-11T20:30:58+00:00",
-              "parent_concept": null,
-              "previousConcept": null,
-              "nextConcept": null
-            },
-            "childConcepts": [
-              {
-                "uuid": "b2b032ae-c073-4b08-82a4-89bc755dd0e2",
-                "title": "File Transfer Protocol",
-                "slug": "protocols/ftp",
-                "description": "Learn about File Transfer Protocols and how you can use an FTP to share files.",
-                "img_src": "https://res.cloudinary.com/slp-careers/image/upload/v1666317345/file-transfer-protocol.png",
-                "content": "FTP stands for File Transfer Protocol. It is a program that allows you to transfer files from your computer to your online area (and vice versa).\n\nThere are many FTP programs available. Some are free, some are not. A couple of the most popular ones are... SmartFTP and WS_FTP.\n\nOnce you have downloaded an FTP program, start it up. The usual information it asks for is:\n* Host ftp URL\n* Your username\n* Your password\n\nThose values should be supplied by your host when you started using them.\n\nAfter those values are entered, you can click on the CONNECT icon. This will now connect your computer to your online area.\n\nThe FTP program will have 2 windows showing. One is your computer, the other is the online area. Find the correct directory and file you want to transfer on your local computer window. Click or highlight the file. Find the correct directory where the file is going to be uploaded to online. Many hosts have the \"root\" directory named **public_html** or **www** or **httpdocs**. Once those are set, click on the -\u003e icon or click-on-and-drag the file over to the right spot. You have now transferred a file!",
-                "created_at": "2000-01-02T00:00:00+00:00",
-                "updated_at": "2000-01-02T00:00:00+00:00",
-                "author_uuid": null,
-                "parent_concept_uuid": "f73aae9b-4d49-45f4-9d22-9f60d29c9f3b",
-                "previous_concept_uuid": null,
-                "next_concept_uuid": null,
-                "is_published": true,
-                "is_legacy_post": true
-              }
-            ],
-            "serializedMdx": {
-              "compiledSource": "/*@jsxRuntime automatic @jsxImportSource react*/\nconst {Fragment: _Fragment, jsx: _jsx, jsxs: _jsxs} = arguments[0];\nconst {useMDXComponents: _provideComponents} = arguments[0];\nfunction _createMdxContent(props) {\n  const _components = Object.assign({\n    h2: \"h2\",\n    p: \"p\"\n  }, _provideComponents(), props.components);\n  return _jsxs(_Fragment, {\n    children: [_jsx(_components.h2, {\n      id: \"introduction-to-protocols\",\n      children: \"Introduction to protocols\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Protocols are the rules that specify how messages should be formatted and how responses should be generated.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Protocols are important in programming because they allow devices to communicate with each other.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"In order for two devices to communicate, they need to be using the same protocol, the same way that two humans can't understand each other unless they communicate with a shared language.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"There are many different protocols that can be used, and each has its own advantages and disadvantages, and each has been heavily influenced by the technology available at the time it was started.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Some common protocols used in programming include TCP/IP, HTTP / HTTPS, and SMTP.  Lets learn a bit about the purpose and inner-workings of each of these more-common protocols.\"\n    }), \"\\n\", _jsx(_components.h2, {\n      id: \"the-tcpip-protocol-stack\",\n      children: \"The TCP/IP protocol stack\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"The TCP/IP protocol stack is a set of protocols that are used to communicate over the internet.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"The stack consists of four layers: the physical layer, the data link layer, the network layer, and the transport layer.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Each layer has its own set of protocols that are responsible for different tasks.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"The physical layer handles communication between devices, the data link layer handles communication between nodes, the network layer handles routing of packets, and the transport layer handles end-to-end communication.\"\n    }), \"\\n\", _jsx(_components.h2, {\n      id: \"http-and-https-protocols\",\n      children: \"HTTP and HTTPS protocols\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Historically, HTTP is the protocol used to fetch web pages, while HTTPS is used for secure communications, such as online banking or shopping.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"But most modern websites use HTTPS to serve traffic on all web pages to ensure all websites are as secure as possible.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Both HTTP and HTTPS use the same underlying technology, but HTTPS adds an extra layer of security by encrypting data before it is transmitted.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"When you visit a website, your browser will automatically use whichever protocol is supported by the site (usually HTTPS).\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"However, you can force your browser to use HTTP if you're visiting an older website. Some websites offer both HTTP and HTTPS versions, while others only offer one or the other.\"\n    }), \"\\n\", _jsx(_components.h2, {\n      id: \"smtp-protocol\",\n      children: \"SMTP protocol\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"SMTP is a text-based protocol that uses plain text to send messages (such as email), and is what's called a push protocol, which means that it sends messages from one server to another.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"SMTP is also referred to as a store-and-forward protocol, which means that it stores messages on the sending server until they can be delivered to the receiving server.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"And SMTP is a \\\"reliable protocol,\\\" which means that delivery of messages is guaranteed.\"\n    }), \"\\n\", _jsx(_components.h2, {\n      id: \"ftp-protocol\",\n      children: \"FTP protocol\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"FTP is a standard protocol for transferring files between computers on the Internet, and it's a \\\"client-server protocol\\\", which means that an FTP client program (running on your computer) is used to connect to an FTP server program (running on the remote computer.)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Once connected, you can upload or download files from the server using the FTP client.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"To connect to an FTP server, you need the server's hostname or IP address, as well as a username and password (if the server requires authentication.)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"There are many different FTP clients available; some are free, while others must be purchased.\"\n    }), \"\\n\", _jsx(_components.h2, {\n      id: \"other-protocols\",\n      children: \"Other protocols\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"As we discussed, protocols are different sets of rules and standards that govern how computer code works, and there's a near-infinite number of them.\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Some were created decades ago, while many others were created just within the last year or two (many of the crypto currencies started in the early 2020's created their own protocols.)\"\n    }), \"\\n\", _jsx(_components.p, {\n      children: \"Protocols are constantly evolving, so it is important to stay up-to-date on the latest changes.\"\n    })]\n  });\n}\nfunction MDXContent(props = {}) {\n  const {wrapper: MDXLayout} = Object.assign({}, _provideComponents(), props.components);\n  return MDXLayout ? _jsx(MDXLayout, Object.assign({}, props, {\n    children: _jsx(_createMdxContent, props)\n  })) : _createMdxContent(props);\n}\nreturn {\n  default: MDXContent\n};\n",
-              "frontmatter": {},
-              "scope": {}
-            }
-          },
-          "__N_SSG": true
-        },
-        "page": "/[...slug]",
-        "query": { "slug": ["protocols"] },
-        "buildId": "SPL67lIoT7U7LnoSO_eCz",
-        "isFallback": false,
-        "gsp": true,
-        "locale": "en",
-        "locales": ["en"],
-        "defaultLocale": "en",
-        "scriptLoader": []
-      }
-    </script>
+     <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+  crossorigin="anonymous"></script>
+  
   </body>
 </html>
