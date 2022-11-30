@@ -1,5 +1,6 @@
 /* custom css */
 
+
 .carousel-inner,
 img {
   max-height: 500px;
@@ -9,13 +10,33 @@ a .flex img:hover {
   opacity: 0.5;
 }
 
+nav a img{
+  border-radius: 15px;
+}
+
+* {
+background-color: initial!important;
+}
+body {
+padding: 25px;
+background-color: white;
+color: black;
+font-size: 25px;
+}
+
+.dark-mode *{
+background-color: black!important;
+color: white;
+}
+
+/* 
 nav {
   background: linear-gradient(132deg, rgb(65, 80, 95) 0%, rgb(36, 37, 38) 100%);
 }
 
 footer {
   background: linear-gradient(132deg, rgb(65, 80, 95) 0%, rgb(36, 37, 38) 100%);
-}
+} */
 
 /* end */
 
