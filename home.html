@@ -23,16 +23,17 @@
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- Bootstrap icons  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
   <link rel="icon" href="../assets/company/company-logo.jpeg" />
   <link rel="preload" href="./assets/css/style.css" as="style" />
   <link rel="stylesheet" href="./assets/css/style.css" data-n-g="" />
 
   <style>
-   
+
   </style>
 </head>
 
-<body >
+<body>
   <!-- <header> -->
   <nav class="navbar navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
@@ -40,8 +41,8 @@
         <a href="home.html"><img class="h-8 w-auto sm:h-10" src="./assets/company/company-logo.jpeg" width="150"
             height="40" alt="TechLead" /></a><span class="link-primary h3 sr-only"> TechLead Academy</span>
       </div>
-      <button type="button" class="btn btn-info active text-light" onclick="myFunction()" ><i
-          class="bi bi-toggle-on"></i></button>
+      <button type="button" class="btn btn-info active text-light" data-bs-toggle="tooltip" data-bs-placement="bottom"
+        data-bs-title="Dark mode " onclick="myFunction()"><i class="bi bi-toggle-on"></i></button>
       <button class="navbar-toggler text-primary-active" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon"></span>
@@ -175,8 +176,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
     <div class="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      
       <div class="relative max-w-7xl mx-auto">
         <div class="text-center">
           <h2 class="text-3xl tracking-tight font-extrabold text-success sm:text-4xl">
@@ -189,18 +190,18 @@
           </p>
         </div>
         <br> <br>
-        <!-- why techlead -->
-        
-        <div class="container-lg bg-gray-600">
-          <h2 class="text-primary text-lg-center text-uppercase h1">Why TechLead Academy works</h2>
-          <hr><hr><hr><br>
+
+        <hr class="hr-text text-primary text-uppercase h1" data-content="Why TechLead Academy works">
+        <br>
           <br>
+        <!-- why techlead -->
+        <div class="container-lg bg-gray-600">          
           <div class="row row-cols-1 row-cols-md-3 g-4">
 
             <div class="col">
               <div class="card">
                 <img src="./assets/imgs/learn.jfif" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body ">
                   <h5 class="card-title text-info h1">Personalized learning</h5>
                   <p class="card-text ">Students practice at their own
                     pace, first filling in gaps in their understanding and then accelerating their learning. </p>
@@ -269,7 +270,10 @@
 
         <!-- Courses section -->
         <br>
-        <div class="container h1 text-lg-center">Available Courses</div><hr><hr><hr>
+        <div class="container h1 text-lg-center">Available Courses</div>
+        <hr>
+        <hr>
+        <hr>
         <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
           <a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="./protocols.html">
             <div class="flex-shrink-0">

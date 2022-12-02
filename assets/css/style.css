@@ -1,5 +1,39 @@
 /* custom css */
 
+/* hr design */
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: rgb(30, 7, 158);
+  text-align: center;
+  height: 1.4em;
+  opacity: 0.8;
+}
+.hr-text:before {
+  content: "";
+  background: url(../company/3-stars.png);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 20px;
+}
+.hr-text:after {
+  content: attr(data-content);
+  position: relative;
+  display: inline-block;
+  color: rgba(26, 12, 132, 0.541);
+  padding: 0 0.5em;
+  line-height: 1.5em;
+  color: #041f99;
+  height: 70px;
+  border-radius: 37px;
+  background: #ffffff;
+}
+
 .carousel-inner,
 img {
   max-height: 500px;
