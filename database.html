@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>TeadLead</title>
+    <meta name="description"
+        content="About TechLead. Your one-stop-site to build-out a technical foundation you can be proud of." />
+
+    <meta name="title" content="TechLead  Academy | Free Online Courses, Lessons &amp; Practice" />
+    <meta property="og:title" content="TechLead Academy | Free Online Courses, Lessons &amp; Practice" />
+    <meta name="twitter:title" content="TechLead Academy | Free Online Courses, Lessons &amp; Practice" />
+    <meta property="og:description"
+        content="Learn for free about computer programming, HTML, CSS, Django, JS, Python and system administrations (Linux and windows), hackings,social engineering, and more. TechLead Academy is a nonprofit with the mission of providing a free, world-class education for anyone, anywhere." />
+    <meta name="twitter:description"
+        content="Learn for free about computer programming, HTML, CSS, Django, JS, Python and system administrations (Linux and windows), hackings,social engineering, and more. TechLead Academy is a nonprofit with the mission of providing a free, world-class education for anyone, anywhere." />
+
+    <link href="https://www.TechLead.com/" rel="canonical" />
+    <meta property="og:image" content="./company_logo.jpeg" />
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Fontawesome cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <link rel="icon" href="./assets/company/company-logo.jpeg" />
+    <meta name="next-head-count" content="9" />
+    <link rel="preload" href="./assets/css/style.css" as="style" />
+    <link rel="stylesheet" href="./assets/css/style.css" data-n-g="" />
+
+</head>
+
+  <body>
+  <!-- <header> -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        <a href="home.html"><img class="h-8 w-auto sm:h-10" src="./assets/company/company-logo.jpeg" width="150"
+            height="40" alt="TechLead" /></a><span class="link-primary h3 sr-only"> TechLead Academy</span>
+      </div>
+      <button type="button" class="btn btn-info active text-light" onclick="myFunction()" ><i
+          class="bi bi-toggle-on"></i></button>
+      <button class="navbar-toggler text-primary-active" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-primary h2" id="offcanvasDarkNavbarLabel">TechLead Academy</h5>
+          <button type="button" class="btn-close btn-close-red bg-danger" data-bs-dismiss="offcanvas"
+            aria-label="Close"><i class="bi bi-backspace-reverse-fill"></i></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item h4  ">
+              <a class="nav-link link-success" aria-current="page" href="#"><i class="bi bi-house-check-fill "></i>
+                Home</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link " href="#"><i class="bi bi-file-earmark-person-fill "></i> About</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link " href="#"><i class="bi bi-book"></i> Books</a>
+            </li>
+            <li class="nav-item dropdown h4">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><i class="bi bi-code-slash"></i>
+                Courses
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item  text-info" title="HyperText Markup language" href="#">HTML&nbsp; <i
+                      class="bi bi-filetype-html" aria-hidden="true"></i>
+                  </a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item text-info" href="#">CSS &nbsp; <i class="bi bi-filetype-css"
+                      aria-hidden="true"></i></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-info" href="#">Python&nbsp; <i class="bi bi-filetype-py"
+                      aria-hidden="true"></i></a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item text-info" href="#">JavaScript&nbsp; <i class="bi bi-filetype-js"
+                      aria-hidden="true"></i></a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item text-info" href="#">Django&nbsp; <i class="bi bi-filetype-py"
+                      aria-hidden="true"></i></a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item text-info" href="#">Computer Networking&nbsp; <i
+                      class="bi bi-bar-chart-steps" aria-hidden="true"></i></a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item text-info" href="#">Linux Commands&nbsp; <i class="bi bi-terminal-dash"
+                      aria-hidden="true"></i></a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item text-info" href="#">Windows commands&nbsp; <i class="bi bi-terminal"
+                      aria-hidden="true"></i></a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item text-info" href="https://www.sqltutorial.org/sql-cheat-sheet/">SQL
+                    Tutorials&nbsp; <i class="bi bi-database" aria-hidden="true"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      <div class="bg-white max-w-7xl mx-auto sm:px-6 lg:px-8">
+        <main>
+         
+          <div class="relative py-16 bg-white overflow-hidden">
+            <div
+              class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8"
+            >
+              <div class="grid grid-cols-1 gap-4 lg:col-span-2">
+                <div class="relative px-4 sm:px-6 lg:px-8">
+                  <div class="text-lg max-w-prose mx-auto">
+                    <img
+                      class="w-full rounded-lg shadow-lg border border-gray-50"
+                      src="./assets/imgs/databases.png"
+                      alt="Databases"
+                      width="1310"
+                      height="873"
+                    />
+                    <h1>
+                      <span
+                        class="mt-10 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+                        >Databases</span
+                      >
+                    </h1>
+                    <div class="sm:flex justify-between italic">
+                      <p class="ml-8 sm:ml-0 mt-8 text-lg text-gray-500">
+                        Written<!-- -->
+                        <!-- --><time
+                          datetime="2022-10-19T20:11:01.535891+00:00"
+                        ></time>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 gap-4">
+                <section aria-labelledby="author" class="hidden sm:block">
+                  <h2 class="sr-only" id="author">Author</h2>
+                </section>
+              </div>
+            </div>
+            <div
+              class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8"
+            >
+              <div class="grid grid-cols-1 gap-4 lg:col-span-2">
+                <div
+                  class="mt-6 prose prose-blue prose-lg text-gray-500 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 w-full"
+                >
+                  <h2 id="introduction-to-databases">
+                    Introduction to databases
+                  </h2>
+                  <!-- -->
+                  <p>
+                    A database is a collection of data that can be stored and
+                    accessed or updated at any point in time by computers.
+                  </p>
+                  <!-- -->
+                  <p>
+                    If you were to compare computers to a human brain, databases
+                    would be the &quot;long term memory&quot; section of the
+                    brain.
+                  </p>
+                  <!-- -->
+                  <p>
+                    When you put data in a database it can always be retrieved
+                    in the future unless it&#x27;s explicitly been updated,
+                    deleted, or something unexpected has happened to the
+                    computer it&#x27;s running on.
+                  </p>
+                  <!-- -->
+                  <p>
+                    All that said, there are many different types of databases
+                    -- each with their own strengths and weaknesses and
+                    best-suited to different use cases.
+                  </p>
+                  <!-- -->
+                  <h2 id="types-of-databases">Types of databases</h2>
+                  <!-- -->
+                  <p>
+                    There are many different types of databases, but we&#x27;ll
+                    just focus on three in this high-level overview:
+                  </p>
+                  <!-- -->
+                  <ul>
+                    <!-- -->
+                    <li>Relational databases</li>
+                    <!-- -->
+                    <li>Object-oriented databases</li>
+                    <!-- -->
+                    <li>Column-oriented databases</li>
+                    <!-- -->
+                  </ul>
+                  <!-- -->
+                  <h3 id="relational-databases">Relational databases</h3>
+                  <!-- -->
+                  <p>
+                    Relational databases are the most common type of database
+                    and are used to store data in tables.
+                  </p>
+                  <!-- -->
+                  <p>
+                    In relational databases tables hold information in rows and
+                    each row corresponds to a single record.
+                  </p>
+                  <!-- -->
+                  <p>
+                    If you&#x27;re unfamiliar with a database table, you can
+                    think of them as being quite similar (visually) to an Excel
+                    spreadsheet.
+                  </p>
+                  <!-- -->
+                  <p>
+                    Relational databases allow for quick retrieval of data
+                    because each table is indexed by a unique column value,
+                    which can also be used or referenced in other tables to
+                    create relationships between different types of data.
+                  </p>
+                  <!-- -->
+                  <p>
+                    Additionally, relational databases offer more security than
+                    other types of databases as they require access to specific
+                    columns in order to modify or delete records.
+                  </p>
+                  <!-- -->
+                  <h3 id="object-oriented-databases">
+                    Object-oriented databases
+                  </h3>
+                  <!-- -->
+                  <p>
+                    Object-oriented databases are used to store data as objects,
+                    which can be more efficient than storing data in tables but
+                    provides fewer &quot;guard rails&quot; than relational
+                    databases to prevent users from making mistakes.
+                  </p>
+                  <!-- -->
+                  <p>
+                    Objects are organized into classes that represent specific
+                    business concepts and the objects within those classes
+                    inherit properties from their parent class.
+                  </p>
+                  <!-- -->
+                  <p>
+                    This means that no matter what object you create, it will
+                    have certain common features (such as an ID property)
+                    defined by the object&#x27;s class definition.
+                  </p>
+                  <!-- -->
+                  <p>
+                    Because objects are self-contained, you don&#x27;t need
+                    access to another object&#x27;s underlying tables or fields
+                    when working with them; instead, all interaction with an
+                    object occurs through its methods and properties.
+                  </p>
+                  <!-- -->
+                  <p>
+                    Additionally, inheritance allows you to easily create
+                    complex hierarchies of objects without needing to write code
+                    explicitly governing how relationships among objects should
+                    work.
+                  </p>
+                  <!-- -->
+                  <h3 id="column-oriented-databases">
+                    Column-oriented databases
+                  </h3>
+                  <!-- -->
+                  <p>
+                    Column-oriented databases are used to store data in columns,
+                    which can be more efficient than storing data in rows.
+                  </p>
+                  <!-- -->
+                  <p>
+                    Columns correspond one-to-one with records stored in a table
+                    and every column is automatically assigned a primary key
+                    value when the database is created.
+                  </p>
+                  <!-- -->
+                  <p>
+                    Unlike row-based storage systems where every record must
+                    contain information about every column included in the
+                    table, column-based storage systems allow for greater
+                    efficiency as only those records which actually use a given
+                    column will include that column&#x27;s value(s).
+                  </p>
+                  <!-- -->
+                  <p>
+                    This allows for faster searches across large datasets since
+                    only the relevant records will need be retrieved rather than
+                    reading all of the data in a table before finding the record
+                    you&#x27;re looking for.
+                  </p>
+                  <!-- -->
+                  <p>How to choose the right database for your project</p>
+                  <!-- -->
+                  <p>
+                    Choosing the right databases is all about weighing the pros
+                    and cons of each of your choices and thinking critically
+                    about what your constraints and priorities are.
+                  </p>
+                  <!-- -->
+                  <p>Here are some key questions to consider:</p>
+                  <!-- -->
+                  <ul>
+                    <!-- -->
+                    <li>
+                      <strong>What kind of data do you need to store?</strong>
+                      Are there many different types of data with complicated
+                      relationships? If so, a relational database might be the
+                      right pick for you. But maybe an object-oriented database
+                      could be a good fit if your data is simple and unlikely to
+                      change in the future.<!-- -->
+                    </li>
+                    <!-- -->
+                    <li>
+                      <strong
+                        >Are &quot;bugs&quot; are no big deal for you or are
+                        they catastrophic and completely unacceptable?</strong
+                      >
+                      If the cost of having a bug isn&#x27;t significant,
+                      object-oriented databases might be a good light-weight
+                      solution for you. But if it&#x27;s critical that you have
+                      all possible safety in place to avoid bugs, a relational
+                      database might be a better fit.<!-- -->
+                    </li>
+                    <!-- -->
+                  </ul>
+                  <!-- -->
+                  <p>
+                    Additionally, it&#x27;s worth considering your
+                    project&#x27;s scalability when choosing a database. Will
+                    your project need to handle a lot of data or traffic?
+                  </p>
+                  <!-- -->
+                  <p>
+                    However - when in doubt - though it might take a bit more
+                    work upfront, it&#x27;s usually a safer bet to go with a
+                    mature SQL database like PostgreSQL.
+                  </p>
+                </div>
+              </div>
+              <div class="grid grid-cols-1 gap-4 h-full order-first sm:order-2">
+                <h2 class="sr-only" id="table-of-contents">
+                  Table of Contents
+                </h2>
+                <div>
+                  <div
+                    class="rounded-lg bg-indigo-50 overflow-hidden shadow-xl border border-indigo-100 mt-4 h-fit top-0 sticky mx-4 sm:mx-0"
+                  >
+                    <div class="p-6">
+                      <p
+                        class="text-center font-semibold text-gray-600 text-lg"
+                      >
+                        Table of Contents
+                      </p>
+                      <ol class="mt-8 flex flex-col">
+                        <li
+                          class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start"
+                        >
+                          <a href="#introduction-to-databases"
+                            >Introduction to databases</a
+                          >
+                        </li>
+                        <li
+                          class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start"
+                        >
+                          <a href="#types-of-databases">Types of databases</a>
+                        </li>
+                        <li
+                          class="ml-10 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start"
+                        >
+                          <a href="#relational-databases"
+                            >Relational databases</a
+                          >
+                        </li>
+                        <li
+                          class="ml-10 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start"
+                        >
+                          <a href="#object-oriented-databases"
+                            >Object-oriented databases</a
+                          >
+                        </li>
+                        <li
+                          class="ml-10 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start"
+                        >
+                          <a href="#column-oriented-databases"
+                            >Column-oriented databases</a
+                          >
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sm:hidden"></div>
+            </div>
+          </div>
+          <div
+            class="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8"
+          >
+            <div class="relative max-w-7xl mx-auto">
+              <div class="text-center">
+                <h2
+                  class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl"
+                >
+                  Learn More About Databases
+                </h2>
+                <p
+                  class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4"
+                ></p>
+              </div>
+              <div
+                class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
+              >
+                <a
+                  class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+                  href="/databases/mysql"
+                  ><div class="flex-shrink-0">
+                    <img
+                      class="h-48 w-full object-cover"
+                      src="./assets/imgs"
+                      width="413"
+                      height="192"
+                      alt="MySQL"
+                    />
+                  </div>
+                  <div
+                    class="flex-1 bg-white p-6 flex flex-col justify-between"
+                  >
+                    <div class="flex-1">
+                      <div class="block mt-2">
+                        <p class="text-xl font-semibold text-gray-900">MySQL</p>
+                        <p class="mt-3 text-base text-gray-500 line-clamp-2">
+                          Learn about one of the world&#x27;s most popular SQL
+                          databases: MySQL.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="mt-6 flex items-center">
+                      <div class="flex space-x-1 text-sm text-gray-500">
+                        <p>Last Updated</p>
+                        <time datetime="2022-11-06T00:00:00+00:00"></time>
+                      </div>
+                    </div></div
+                ></a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div
+            class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8"
+          >
+            <nav
+              class="-mx-5 -my-2 flex flex-wrap justify-center"
+              aria-label="Footer"
+            >
+              <div class="px-5 py-2">
+                <a
+                  href="/about"
+                  class="text-base text-gray-500 hover:text-gray-900"
+                  >About</a
+                >
+              </div>
+            </nav>
+            <p class="mt-8 text-center text-base text-gray-500">
+              ©
+              <!-- -->2022<!-- -->
+              TechLead Academy. All rights reserved.<!-- -->
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+     <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script src="./assets/script.js"></script>
+  </body>
+</html>

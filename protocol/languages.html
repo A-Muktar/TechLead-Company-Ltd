@@ -32,382 +32,358 @@
 </head>
 
 <body>
-        <!-- <header> -->
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <div class="flex justify-start lg:w-0 lg:flex-1">
-                    <a href="../home.html"><img class="h-8 w-auto sm:h-10" src="../assets/company/company-logo.jpeg"
-                            width="150" height="40" alt="TechLead" /></a><span class="link-primary h3 sr-only"> TechLead
-                        Academy</span>
+    <!-- <header> -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="../home.html"><img class="h-8 w-auto sm:h-10" src="../assets/company/company-logo.jpeg"
+                        width="150" height="40" alt="TechLead" /></a><span class="link-primary h3 sr-only"> TechLead
+                    Academy</span>
+            </div>
+            <button type="button" class="btn btn-info active align-content-sm-start text-light"
+                onclick="myFunction()"><i class="bi bi-toggle-on"></i></button>
+            <button class="navbar-toggler text-primary-active" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-primary h2" id="offcanvasDarkNavbarLabel">TechLead Academy</h5>
+                    <button type="button" class="btn-close btn-close-red bg-danger" data-bs-dismiss="offcanvas"
+                        aria-label="Close"><i class="bi bi-backspace-reverse-fill"></i></button>
                 </div>
-                <button type="button" class="btn btn-info active align-content-sm-start text-light"
-                    onclick="myFunction()"><i class="bi bi-toggle-on"></i></button>
-                <button class="navbar-toggler text-primary-active" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title text-primary h2" id="offcanvasDarkNavbarLabel">TechLead Academy</h5>
-                        <button type="button" class="btn-close btn-close-red bg-danger" data-bs-dismiss="offcanvas"
-                            aria-label="Close"><i class="bi bi-backspace-reverse-fill"></i></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item h4  ">
-                                <a class="nav-link link-success" aria-current="page" href="#"><i
-                                        class="bi bi-house-check-fill "></i>
-                                    Home</a>
-                            </li>
-                            <li class="nav-item h4">
-                                <a class="nav-link " href="#"><i class="bi bi-file-earmark-person-fill "></i> About</a>
-                            </li>
-                            <li class="nav-item h4">
-                                <a class="nav-link " href="#"><i class="bi bi-book"></i> Books</a>
-                            </li>
-                            <li class="nav-item dropdown h4">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"><i class="bi bi-code-slash"></i>
-                                    Courses
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item  text-info" title="HyperText Markup language"
-                                            href="#">HTML&nbsp; <i class="bi bi-filetype-html" aria-hidden="true"></i>
-                                        </a></li>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item h4  ">
+                            <a class="nav-link link-success" aria-current="page" href="#"><i
+                                    class="bi bi-house-check-fill "></i>
+                                Home</a>
+                        </li>
+                        <li class="nav-item h4">
+                            <a class="nav-link " href="#"><i class="bi bi-file-earmark-person-fill "></i> About</a>
+                        </li>
+                        <li class="nav-item h4">
+                            <a class="nav-link " href="#"><i class="bi bi-book"></i> Books</a>
+                        </li>
+                        <li class="nav-item dropdown h4">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><i class="bi bi-code-slash"></i>
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item  text-info" title="HyperText Markup language"
+                                        href="#">HTML&nbsp; <i class="bi bi-filetype-html" aria-hidden="true"></i>
+                                    </a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item text-info" href="#">CSS &nbsp; <i class="bi bi-filetype-css"
+                                            aria-hidden="true"></i></a></li>
+                                <li>
                                     <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item text-info" href="#">CSS &nbsp; <i
-                                                class="bi bi-filetype-css" aria-hidden="true"></i></a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item text-info" href="#">Python&nbsp; <i
-                                                class="bi bi-filetype-py" aria-hidden="true"></i></a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item text-info" href="#">JavaScript&nbsp; <i
-                                                class="bi bi-filetype-js" aria-hidden="true"></i></a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item text-info" href="#">Django&nbsp; <i
-                                                class="bi bi-filetype-py" aria-hidden="true"></i></a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item text-info" href="#">Computer Networking&nbsp; <i
-                                                class="bi bi-bar-chart-steps" aria-hidden="true"></i></a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item text-info" href="#">Linux Commands&nbsp; <i
-                                                class="bi bi-terminal-dash" aria-hidden="true"></i></a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item text-info" href="#">Windows commands&nbsp; <i
-                                                class="bi bi-terminal" aria-hidden="true"></i></a></li>
-                                    <hr class="dropdown-divider">
-                                    <li><a class="dropdown-item text-info"
-                                            href="https://www.sqltutorial.org/sql-cheat-sheet/">SQL
-                                            Tutorials&nbsp; <i class="bi bi-database" aria-hidden="true"></i></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="d-flex mt-3" role="search">
-                            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-success" type="submit">Search</button>
-                        </form>
-                    </div>
+                                </li>
+                                <li><a class="dropdown-item text-info" href="#">Python&nbsp; <i
+                                            class="bi bi-filetype-py" aria-hidden="true"></i></a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item text-info" href="#">JavaScript&nbsp; <i
+                                            class="bi bi-filetype-js" aria-hidden="true"></i></a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item text-info" href="#">Django&nbsp; <i
+                                            class="bi bi-filetype-py" aria-hidden="true"></i></a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item text-info" href="#">Computer Networking&nbsp; <i
+                                            class="bi bi-bar-chart-steps" aria-hidden="true"></i></a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item text-info" href="#">Linux Commands&nbsp; <i
+                                            class="bi bi-terminal-dash" aria-hidden="true"></i></a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item text-info" href="#">Windows commands&nbsp; <i
+                                            class="bi bi-terminal" aria-hidden="true"></i></a></li>
+                                <hr class="dropdown-divider">
+                                <li><a class="dropdown-item text-info"
+                                        href="https://www.sqltutorial.org/sql-cheat-sheet/">SQL
+                                        Tutorials&nbsp; <i class="bi bi-database" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-        </nav>
-        <main>
-            <nav class="flex max-w-7xl mx-auto px-6 sm:px-6 lg:px-8" aria-label="Breadcrumb">
-                <ol role="list" class="flex items-center space-x-4">
-                    <li class="">
-                        <div><a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                    aria-hidden="true" class="flex-shrink-0 h-5 w-5 text-gray-400">
-                                    <path
-                                        d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z">
-                                    </path>
-                                    <path
-                                        d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z">
-                                    </path>
-                                </svg><span class="sr-only">Home</span></a></div>
-                    </li>
-                    <li>
-                        <div class="flex items-center"><svg class="flex-shrink-0 h-5 w-5 text-gray-300"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20"
-                                aria-hidden="true">
-                                <path d="M5.555 17.776l8-16 .894.448-8 16-.894-.448z"></path>
-                            </svg><a class="ml-4 text-sm font-medium text-info hover:text-gray-700"
-                                href="/languages">Programming Languages</a></div>
-                    </li>
-                </ol>
-            </nav>
-            <div class="relative py-16 bg-white overflow-hidden">
-                <div class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
-                    <div class="grid grid-cols-1 gap-4 lg:col-span-2">
-                        <div class="relative px-4 sm:px-6 lg:px-8">
-                            <div class="text-lg max-w-prose mx-auto"><img
-                                    class="w-full rounded-lg shadow-lg border border-gray-50"
-                                    src="../assets/imgs/programming-languages.png"
-                                    alt="Programming Languages" width="1310" height="873" />
-                                <h1><span
-                                        class="mt-10 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray sm:text-4xl">Programming
-                                        Languages</span></h1>
-                                <div class="sm:flex justify-between italic">
-                                    <p class="ml-8 sm:ml-0 mt-8 text-lg text-gray-500">Written
-                                        <!-- -->
-                                        <!-- --><time dateTime="2022-10-19T19:55:03.084723+00:00"></time>
+        </div>
+    </nav>
+    <main>
+    
+        <div class="relative py-16 bg-white overflow-hidden">
+            <div class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
+                <div class="grid grid-cols-1 gap-4 lg:col-span-2">
+                    <div class="relative px-4 sm:px-6 lg:px-8">
+                        <div class="text-lg max-w-prose mx-auto"><img
+                                class="w-full rounded-lg shadow-lg border border-gray-50"
+                                src="../assets/imgs/programming-languages.png" alt="Programming Languages" width="1310"
+                                height="873" />
+                            <h1><span
+                                    class="mt-10 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray sm:text-4xl">Programming
+                                    Languages</span></h1>
+                            <div class="sm:flex justify-between italic">
+                                <p class="ml-8 sm:ml-0 mt-8 text-lg text-gray-500">Written
+                                    <!-- -->
+                                    <!-- --><time dateTime="2022-10-19T19:55:03.084723+00:00"></time>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4">
+                    <section aria-labelledby="author" class="hidden sm:block">
+                        <h2 class="sr-only" id="author">Author: TechLead Academy
+                        </h2>
+                    </section>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
+                <div class="grid grid-cols-1 gap-4 lg:col-span-2">
+                    <div
+                        class="mt-6 prose prose-blue prose-lg text-gray-500 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 w-full">
+                        <h2 id="what-is-a-programming-language">What is a programming language?</h2>
+                        <!-- -->
+                        <p>A programming language is a formal language that specifies a set of instructions that
+                            can be used to produce various kinds of output.</p>
+                        <!-- -->
+                        <p>Programming languages are used to create computer programs, make everyday gadgets
+                            work, and build software applications.</p>
+                        <!-- -->
+                        <p>There are different types of programming languages, each designed for specific
+                            purposes and with unique constraints in mind</p>
+                        <!-- -->
+                        <p>Learning a programming language can be challenging, but it can also be rewarding and
+                            beneficial in many ways.</p>
+                        <!-- -->
+                        <h2 id="why-should-you-learn-a-programming-language">Why should you learn a programming
+                            language?</h2>
+                        <!-- -->
+                        <p>There are many possible reasons to learn a programming language, but not all reasons
+                            are universal. For example, some people may want to learn programming because they
+                            want to get a job that pays well with good benefits or because it can give them an
+                            edge in the job market. Even if you don’t work as a software engineer, learning
+                            programming can still be very beneficial and fun!</p>
+                        <!-- -->
+                        <h2 id="what-are-the-most-popular-programming-languages">What are the most popular
+                            programming languages?</h2>
+                        <!-- -->
+                        <p>The most popular programming languages are those that are most widely used by
+                            developers, such as JavaScript, Python, and Java.</p>
+                        <!-- -->
+                        <p>Popularity can be measured by the number of users, the amount of code written in the
+                            language, or the number of contributions to open source projects.</p>
+                        <!-- -->
+                        <p>But it&#x27;s important to choose a language that is well suited to the task at hand,
+                            rather than simply choosing the most popular language.</p>
+                        <!-- -->
+                        <p>Languages become popular for a variety of reasons, including their ease of use,
+                            performance, and community support.</p>
+                        <!-- -->
+                        <p>Some languages are easier to learn than others, and choosing one that doesn&#x27;t
+                            demotivate you with needing to learn too much at once is important.</p>
+                        <!-- -->
+                        <h2 id="what-are-the-differences-between-programming-languages">What are the differences
+                            between programming languages?</h2>
+                        <!-- -->
+                        <p>Compiled languages are more efficient than interpreted languages, but they require a
+                            compiler to be installed on the computer.</p>
+                        <!-- -->
+                        <p>Interpreted languages are faster to run, but they can be less reliable because there
+                            is no guarantee that the code will be executed as intended.</p>
+                        <!-- -->
+                        <p>And, besides the distinction between compiled and interpreted languages, another
+                            differentiator is whether a language is statically typed or dynamically typed.</p>
+                        <!-- -->
+                        <p>Statically typed languages are “safer” and harder to make certain types of errors,
+                            but can be trickier to use for a beginner.</p>
+                        <!-- -->
+                        <p>While dynamically typed languages are somewhat more forgiving to beginners, but also
+                            enable users to make errors that wouldn’t be possible in a statically-types
+                            language.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 gap-4 h-full order-first sm:order-2">
+                    <h2 class="sr-only" id="table-of-contents">Table of Contents</h2>
+                    <div>
+                        <div
+                            class="rounded-lg bg-indigo-50 overflow-hidden shadow-xl border border-indigo-100 mt-4 h-fit top-0 sticky mx-4 sm:mx-0">
+                            <div class="p-6">
+                                <p class="text-center font-semibold text-gray-600 text-lg">Table of Contents</p>
+                                <ol class="mt-8 flex flex-col">
+                                    <li
+                                        class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start">
+                                        <a href="#what-is-a-programming-language">What is a programming
+                                            language?</a>
+                                    </li>
+                                    <li
+                                        class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start">
+                                        <a href="#why-should-you-learn-a-programming-language">Why should you
+                                            learn a programming language?</a>
+                                    </li>
+                                    <li
+                                        class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start">
+                                        <a href="#what-are-the-most-popular-programming-languages">What are the
+                                            most popular programming languages?</a>
+                                    </li>
+                                    <li
+                                        class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start">
+                                        <a href="#what-are-the-differences-between-programming-languages">What
+                                            are the differences between programming languages?</a>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sm:hidden"></div>
+            </div>
+        </div>
+        <div class="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+            <div class="relative max-w-7xl mx-auto">
+                <div class="text-center">
+                    <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Learn More
+                        About Programming Languages</h2>
+                    <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4"></p>
+                </div>
+                <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"><a
+                        class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/javascript">
+                        <div class="flex-shrink-0"><img class="h-48 w-full object-cover" src="../" width="413"
+                                height="192" alt="JavaScript" /></div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <div class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">JavaScript</p>
+                                    <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn about JavaScript
+                                        -- the programming language that&#x27;s native to the browser and allows
+                                        for websites to be interactive, among other things.</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
+                                </div>
+                            </div>
+                        </div>
+                    </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/css">
+                        <div class="flex-shrink-0"><img class="h-48 w-full object-cover" src="../" width="413"
+                                height="192" alt="CSS" /></div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <div class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">CSS</p>
+                                    <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn everything you
+                                        need to know about CSS - the language used to give elements on a webpage
+                                        styling. From colors, to fonts, and spacing -- CSS gets the job done.
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 gap-4">
-                        <section aria-labelledby="author" class="hidden sm:block">
-                            <h2 class="sr-only" id="author">Author: TechLead Academy
-                            </h2>
-                        </section>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
-                    <div class="grid grid-cols-1 gap-4 lg:col-span-2">
-                        <div
-                            class="mt-6 prose prose-blue prose-lg text-gray-500 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 w-full">
-                            <h2 id="what-is-a-programming-language">What is a programming language?</h2>
-                            <!-- -->
-                            <p>A programming language is a formal language that specifies a set of instructions that
-                                can be used to produce various kinds of output.</p>
-                            <!-- -->
-                            <p>Programming languages are used to create computer programs, make everyday gadgets
-                                work, and build software applications.</p>
-                            <!-- -->
-                            <p>There are different types of programming languages, each designed for specific
-                                purposes and with unique constraints in mind</p>
-                            <!-- -->
-                            <p>Learning a programming language can be challenging, but it can also be rewarding and
-                                beneficial in many ways.</p>
-                            <!-- -->
-                            <h2 id="why-should-you-learn-a-programming-language">Why should you learn a programming
-                                language?</h2>
-                            <!-- -->
-                            <p>There are many possible reasons to learn a programming language, but not all reasons
-                                are universal. For example, some people may want to learn programming because they
-                                want to get a job that pays well with good benefits or because it can give them an
-                                edge in the job market. Even if you don’t work as a software engineer, learning
-                                programming can still be very beneficial and fun!</p>
-                            <!-- -->
-                            <h2 id="what-are-the-most-popular-programming-languages">What are the most popular
-                                programming languages?</h2>
-                            <!-- -->
-                            <p>The most popular programming languages are those that are most widely used by
-                                developers, such as JavaScript, Python, and Java.</p>
-                            <!-- -->
-                            <p>Popularity can be measured by the number of users, the amount of code written in the
-                                language, or the number of contributions to open source projects.</p>
-                            <!-- -->
-                            <p>But it&#x27;s important to choose a language that is well suited to the task at hand,
-                                rather than simply choosing the most popular language.</p>
-                            <!-- -->
-                            <p>Languages become popular for a variety of reasons, including their ease of use,
-                                performance, and community support.</p>
-                            <!-- -->
-                            <p>Some languages are easier to learn than others, and choosing one that doesn&#x27;t
-                                demotivate you with needing to learn too much at once is important.</p>
-                            <!-- -->
-                            <h2 id="what-are-the-differences-between-programming-languages">What are the differences
-                                between programming languages?</h2>
-                            <!-- -->
-                            <p>Compiled languages are more efficient than interpreted languages, but they require a
-                                compiler to be installed on the computer.</p>
-                            <!-- -->
-                            <p>Interpreted languages are faster to run, but they can be less reliable because there
-                                is no guarantee that the code will be executed as intended.</p>
-                            <!-- -->
-                            <p>And, besides the distinction between compiled and interpreted languages, another
-                                differentiator is whether a language is statically typed or dynamically typed.</p>
-                            <!-- -->
-                            <p>Statically typed languages are “safer” and harder to make certain types of errors,
-                                but can be trickier to use for a beginner.</p>
-                            <!-- -->
-                            <p>While dynamically typed languages are somewhat more forgiving to beginners, but also
-                                enable users to make errors that wouldn’t be possible in a statically-types
-                                language.</p>
-                        </div>
-                    </div>
-                    <div class="grid grid-cols-1 gap-4 h-full order-first sm:order-2">
-                        <h2 class="sr-only" id="table-of-contents">Table of Contents</h2>
-                        <div>
-                            <div
-                                class="rounded-lg bg-indigo-50 overflow-hidden shadow-xl border border-indigo-100 mt-4 h-fit top-0 sticky mx-4 sm:mx-0">
-                                <div class="p-6">
-                                    <p class="text-center font-semibold text-gray-600 text-lg">Table of Contents</p>
-                                    <ol class="mt-8 flex flex-col">
-                                        <li
-                                            class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start">
-                                            <a href="#what-is-a-programming-language">What is a programming
-                                                language?</a>
-                                        </li>
-                                        <li
-                                            class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start">
-                                            <a href="#why-should-you-learn-a-programming-language">Why should you
-                                                learn a programming language?</a>
-                                        </li>
-                                        <li
-                                            class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start">
-                                            <a href="#what-are-the-most-popular-programming-languages">What are the
-                                                most popular programming languages?</a>
-                                        </li>
-                                        <li
-                                            class="ml-5 text-gray-600 hover:font-semibold my-2 underline decoration-indigo-500 hover:decoration-indigo-300 hover:decoration-2 self-start">
-                                            <a href="#what-are-the-differences-between-programming-languages">What
-                                                are the differences between programming languages?</a>
-                                        </li>
-                                    </ol>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="sm:hidden"></div>
+                    </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/html">
+                        <div class="flex-shrink-0"><img class="h-48 w-full object-cover" src="../" width="413"
+                                height="192" alt="HTML" /></div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <div class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">HTML</p>
+                                    <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn the basics behind
+                                        HTML, the language used to set the structure of all websites. If you see
+                                        something on a website -- there&#x27;s an HTML element putting it there.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
+                                </div>
+                            </div>
+                        </div>
+                    </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/python">
+                        <div class="flex-shrink-0"><img class="h-48 w-full object-cover" src="../" width="413"
+                                height="192" alt="Python" /></div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <div class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">Python</p>
+                                    <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn all about the
+                                        nuances of Python.</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
+                                </div>
+                            </div>
+                        </div>
+                    </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/django">
+                        <div class="flex-shrink-0"><img class="h-48 w-full object-cover" src="../" width="413"
+                                height="192" alt="django" /></div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <div class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">Django</p>
+                                    <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn about Django and
+                                        what it aims to do.</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
+                                </div>
+                            </div>
+                        </div>
+                    </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/sql">
+                        <div class="flex-shrink-0"><img class="h-48 w-full object-cover" src="../" width="413"
+                                height="192" alt="sql" /></div>
+                        <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                            <div class="flex-1">
+                                <div class="block mt-2">
+                                    <p class="text-xl font-semibold text-gray-900">SQL</p>
+                                    <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn all about SQL,
+                                        one of the most influential programming languages of the early
+                                        2022&#x27;s.</p>
+                                </div>
+                            </div>
+                            <div class="mt-6 flex items-center">
+                                <div class="flex space-x-1 text-sm text-gray-500">
+                                    <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
+                                </div>
+                            </div>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+            <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+                <div class="px-5 py-2"><a href="/about" class="text-base text-gray-500 hover:text-gray-900">About</a>
                 </div>
-            </div>
-            <div class="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
-                <div class="relative max-w-7xl mx-auto">
-                    <div class="text-center">
-                        <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">Learn More
-                            About Programming Languages</h2>
-                        <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4"></p>
-                    </div>
-                    <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"><a
-                            class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/javascript">
-                            <div class="flex-shrink-0"><img class="h-48 w-full object-cover"
-                                    src="../"
-                                    width="413" height="192" alt="JavaScript" /></div>
-                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                                <div class="flex-1">
-                                    <div class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">JavaScript</p>
-                                        <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn about JavaScript
-                                            -- the programming language that&#x27;s native to the browser and allows
-                                            for websites to be interactive, among other things.</p>
-                                    </div>
-                                </div>
-                                <div class="mt-6 flex items-center">
-                                    <div class="flex space-x-1 text-sm text-gray-500">
-                                        <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
-                                    </div>
-                                </div>
-                            </div>
-                        </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/css">
-                            <div class="flex-shrink-0"><img class="h-48 w-full object-cover"
-                                    src="../"
-                                    width="413" height="192" alt="CSS" /></div>
-                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                                <div class="flex-1">
-                                    <div class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">CSS</p>
-                                        <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn everything you
-                                            need to know about CSS - the language used to give elements on a webpage
-                                            styling. From colors, to fonts, and spacing -- CSS gets the job done.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="mt-6 flex items-center">
-                                    <div class="flex space-x-1 text-sm text-gray-500">
-                                        <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
-                                    </div>
-                                </div>
-                            </div>
-                        </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/html">
-                            <div class="flex-shrink-0"><img class="h-48 w-full object-cover"
-                                    src="../"
-                                    width="413" height="192" alt="HTML" /></div>
-                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                                <div class="flex-1">
-                                    <div class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">HTML</p>
-                                        <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn the basics behind
-                                            HTML, the language used to set the structure of all websites. If you see
-                                            something on a website -- there&#x27;s an HTML element putting it there.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="mt-6 flex items-center">
-                                    <div class="flex space-x-1 text-sm text-gray-500">
-                                        <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
-                                    </div>
-                                </div>
-                            </div>
-                        </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/python">
-                            <div class="flex-shrink-0"><img class="h-48 w-full object-cover"
-                                    src="../"
-                                    width="413" height="192" alt="Python" /></div>
-                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                                <div class="flex-1">
-                                    <div class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">Python</p>
-                                        <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn all about the
-                                            nuances of Python.</p>
-                                    </div>
-                                </div>
-                                <div class="mt-6 flex items-center">
-                                    <div class="flex space-x-1 text-sm text-gray-500">
-                                        <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
-                                    </div>
-                                </div>
-                            </div>
-                        </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/django">
-                            <div class="flex-shrink-0"><img class="h-48 w-full object-cover"
-                                    src="../"
-                                    width="413" height="192" alt="django" /></div>
-                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                                <div class="flex-1">
-                                    <div class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">Django</p>
-                                        <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn about Django and
-                                            what it aims to do.</p>
-                                    </div>
-                                </div>
-                                <div class="mt-6 flex items-center">
-                                    <div class="flex space-x-1 text-sm text-gray-500">
-                                        <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
-                                    </div>
-                                </div>
-                            </div>
-                        </a><a class="flex flex-col rounded-lg shadow-lg overflow-hidden" href="/languages/sql">
-                            <div class="flex-shrink-0"><img class="h-48 w-full object-cover"
-                                    src="../"
-                                    width="413" height="192" alt="sql" /></div>
-                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-                                <div class="flex-1">
-                                    <div class="block mt-2">
-                                        <p class="text-xl font-semibold text-gray-900">SQL</p>
-                                        <p class="mt-3 text-base text-gray-500 line-clamp-2">Learn all about SQL,
-                                            one of the most influential programming languages of the early
-                                            2022&#x27;s.</p>
-                                    </div>
-                                </div>
-                                <div class="mt-6 flex items-center">
-                                    <div class="flex space-x-1 text-sm text-gray-500">
-                                        <p>Last Updated</p><time dateTime="2022-11-23T00:00:00+00:00"></time>
-                                    </div>
-                                </div>
-                            </div>
-                        </a></div>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-                <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-                    <div class="px-5 py-2"><a href="/about"
-                            class="text-base text-gray-500 hover:text-gray-900">About</a></div>
-                
-                </nav>
-                <p class="mt-8 text-center text-base text-gray-500">©
-                    <!-- -->2022
-                    <!-- --> TechLead Academy. All rights reserved.
-                    <!-- -->
-                </p>
-            </div>
-        </footer>
-    </div>
 
-<script src="../assets/script.js"></script>
+            </nav>
+            <p class="mt-8 text-center text-base text-gray-500">©
+                <!-- -->2022
+                <!-- --> TechLead Academy. All rights reserved.
+                <!-- -->
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <script src="../assets/script.js"></script>
 </body>
 
 </html>
