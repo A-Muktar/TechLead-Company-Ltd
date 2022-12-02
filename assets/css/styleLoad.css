@@ -1,7 +1,6 @@
 *, *::after, *::before{
     box-sizing:border-box ;
    }
-   
 
    div{
     text-align:center;
@@ -16,6 +15,7 @@
        justify-content: center;
        align-items: center;
        font-size: 2rem;
+       color: #ffffff;
        overflow: hidden;
        position: relative;
        animation: text-color 2s ease-in-out infinite;
