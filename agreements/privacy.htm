@@ -10,18 +10,136 @@
     <!-- Bootstrap CSS only -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <!-- Fontawesome cdn  -->
-    <link rel="stylesheet" href="./assets/css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
     <link rel="icon" href="../assets/company/company-logo.jpeg" />
-    
+  
     <title>TechLead Academy | Privacy</title>
+
+    <style>
+    .dark-mode {
+    background-color: black!important;
+    color: white;
+}
+
+    </style>
 </head>
 
 <body>
-    <div class='container-md'>
-        
-        <div class='row'>
-            <div class='col-md-8 justify-content-md-center align-items-md-center'>
-                <h2 class="text-info text-center">Privacy Policy</h2>
+<nav class="navbar navbar-dark  bg-dark bg-opacity-75 fixed-top">
+    <div class="container-fluid ">
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        <a href="../home.html"><img class="h-8 w-auto sm:h-10" src="../assets/company/company-logo.jpeg" width="150"
+            height="40" alt="TechLead" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            title="TechLead Academy" /></a><span class="link-primary h3 sr-only"> TechLead Academy</span>
+      </div>
+      <a href="../account/login.html" data-bs-toggle="tooltip" data-bs-placement="bot tom" title="Login | sign up">
+        <i class="bi bi-person-circle text-white"></i>
+      </a>
+
+      <button type="button" class="btn  text-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Theme"
+        onclick="myFunction()">
+        <i class="bi bi-toggle-on"></i>
+      </button>
+      <button class="navbar-toggler text-primary-active" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" data-bs-toggle="tooltip"
+        data-bs-placement="right" title="navbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark bg-opacity-100" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-primary h2" id="offcanvasDarkNavbarLabel">
+            TechLead Academy
+          </h5>
+          <button type="button" class="btn-close btn-close-red bg-danger" data-bs-dismiss="offcanvas"
+            aria-label="Close">
+            <i class="bi bi-backspace-reverse-fill"></i>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item h4">
+              <a class="nav-link link-success" aria-current="page" href="#"><i class="bi bi-house-check-fill"></i>
+                Home</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="#"><i class="bi bi-file-earmark-person-fill"></i> About</a>
+            </li>
+            <li class="nav-item h4">
+              <a class="nav-link" href="#"><i class="bi bi-book"></i> Books</a>
+            </li>
+            <li class="nav-item dropdown h4">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false"><i class="bi bi-code-slash"></i>
+                Courses
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li>
+                  <a class="dropdown-item text-info" title="HyperText Markup language" href="#">HTML&nbsp;
+                    <i class="bi bi-filetype-html" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item text-info" href="#">CSS &nbsp;
+                    <i class="bi bi-filetype-css" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-info" href="#">Python&nbsp;
+                    <i class="bi bi-filetype-py" aria-hidden="true"></i></a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item text-info" href="#">JavaScript&nbsp;
+                    <i class="bi bi-filetype-js" aria-hidden="true"></i></a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item text-info" href="#">Django&nbsp;
+                    <i class="bi bi-filetype-py" aria-hidden="true"></i></a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item text-info" href="#">Computer Networking&nbsp;
+                    <i class="bi bi-bar-chart-steps" aria-hidden="true"></i></a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item text-info" href="#">Linux Commands&nbsp;
+                    <i class="bi bi-terminal-dash" aria-hidden="true"></i></a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item text-info" href="#">Windows commands&nbsp;
+                    <i class="bi bi-terminal" aria-hidden="true"></i></a>
+                </li>
+                <hr class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item text-info" href="https://www.sqltutorial.org/sql-cheat-sheet/">SQL
+                    Tutorials&nbsp;
+                    <i class="bi bi-database" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+   
+        <div class="container-md content-center" >
+        <div class='row text-align-center'>
+            <div class='col-md-8 justify-content-md-center align-items-md-center ' >
+                <h2 class="text-info text-center" style="margin-top:80px">Privacy Policy</h2>
+                 <hr width="100%" color="green" size="7px" align="center" />
                 <p>This Privacy Policy governs the manner in which the School collects, uses, maintains and discloses
                     information collected from users (each, a “Student”) of the School. This Privacy Policy applies to
                     the School and all Courses offered by the School.<br><br><strong>Personal identification
@@ -51,6 +169,7 @@
                         respond to Student inquiries, questions, or other requests.
                     </li>
                 </ul>
+                
                 <p><strong>Sharing your personal information</strong></p>
                 <p>We do not sell, trade, or rent Student personal identification information to others.</p>
                 <p><strong>Third party websites</strong></p>
@@ -75,6 +194,113 @@
         </div>
     </div>
     
+    <br>
+ <footer>
+    <div class="container-fluid" style="  background-image: linear-gradient(-180deg, #000000 0%, #200835 100%); margin-top:50px;">
+      <div class="container" >
+        <div class="row g-5">
+          <div class="col-md-6">
+            <h5 class="text-white">Help TechLead Grow</h5>
+            <p class="text-secondary h5">We are a team of college students working on this project like it's our full
+              time job. Any amount would help support and continue development on this project and is greatly
+              appreciated.
+            </p>
+            <button class="btn text-bg-primary text-white" type="submit" name="action"
+              alt="PayPal - The safer, easier way to pay online!">Donate
+            </button>
+            </form>
+
+          </div>
+          <div class="col-md-6">
+            <h5 class="text-white ">Contribute</h5>
+            <p class="text-secondary h5">We are glad to welcome
+                any developer who is interested in this our project. Come
+              in and discuss new features, future goals, general problems or questions, or anything else you can think
+              of.
+            </p>
+            <a class="btn text-bg-primary text-white text-md-center " target="_blank" href=""> Join</a>
+          </div>
+          <div class="col-md text-gray-400">
+            <h1 class="col text-white">Company</h1>
+            <ul class="text-secondary h5 g-3">
+
+              <a href="work.html">
+                <li>About <i class="bi bi-arrow-right-circle-fill spinner-grow"></i></li>
+              </a>
+              <a href="#">
+                <li>Mission <i class="bi bi-arrow-up-right-circle-fill table-hover spinner-grow"></i></li>
+              </a>
+              <a href="services.html">
+                <li>Services <i class="bi bi-arrow-up-right-circle-fill spinner-grow"></i></li>
+              </a>
+              <a href="#">
+                <li>Social <i class="bi bi-arrow-up-right-circle-fill spinner-grow"></i></li>
+              </a>
+              <a href="team.html">
+                <li>Contact us <i class="bi bi-arrow-up-right-circle-fill spinner-grow "></i></li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="col-md text-gray-400">
+            <h1 class="text-white">Resources</h1>
+            <ul class="text-secondary h5 g-3">
+
+              <a href="./resourses/books.html">
+                <li>Books <i class="bi bi-arrow-right-circle-fill spinner-grow"></i></li>
+              </a>
+              <a href="./resourses/software.html">
+                <li>Software <i class="bi bi-arrow-right-circle-fill table-hover spinner-grow"></i></li>
+              </a>
+              <a href="./resourses/services.html">
+                <li>Activation Keys<i class="bi bi-arrow-right-circle-fill spinner-grow"></i></li>
+              </a>
+              <a href="./resourses/licenses">
+                <li>Licenses<i class="bi bi-arrow-right-circle-fill spinner-grow"></i></li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="col text-gray-400">
+            <h1 class=" text-white">Agreements</h1>
+            <ul class="text-secondary h5 g-3">
+
+              <a href="./agreements/terms.html">
+                <li>Terms of use <i class="bi bi-arrow-right-circle-fill "></i></li>
+              </a>
+              <a href="./agreements/cookies.html">
+                <li>Cookies <i class="bi bi-arrow-right-circle-fill "></i></li>
+              </a>
+              <a href="./agreements/privacy.htm">
+                <li>Privacy <i class="bi bi-arrow-right-circle-fill "></i></li>
+              </a>
+              <a href="#">
+                <li>Social <i class="bi bi-arrow-right-circle-fill "></i></li>
+              </a>
+              <a href="team.html">
+                <li>Contact us <i class="bi bi-arrow-up-right-circle-fill"></i></li>
+              </a>
+            </ul>
+          </div>
+       
+     
+      <p class=" text-center text-white h4" style="background-image: linear-gradient(200deg, #090216 15%, #43156c 90%); background-repeat: no-repeat; padding: 15px; margin-bottom: 0%;">
+        ©
+        <!-- -->2022
+        <!-- -->
+        TechLead Co. Ltd. All rights reserved.
+        <!-- -->
+      </p>
+    </div>
+    </div>
+    </div>
+
+  </footer>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="../assets//js/bootstrap5.bundle.min.js"></script>
+
+  <script src="../assets/script.js"></script>
 </body>
 
 </html>
